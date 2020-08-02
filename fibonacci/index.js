@@ -8,6 +8,7 @@
 // Example:
 //   fib(4) === 3
 
+// O(n)
 // function fib(n, i = 0, last = 1, count = 0) {
 //     if (count >= n) {
 //         return i; 
@@ -19,7 +20,7 @@
 
 
 //another solution 
-
+// O(2^n)
 function fib(n) {
     if (n < 2) {
         return n;
