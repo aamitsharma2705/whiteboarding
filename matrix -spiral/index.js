@@ -7,6 +7,11 @@
 // [ 11, 16, 15, 6 ],
 // [ 10, 9, 8, 7 ] ]
 
+// approach taken
+// left --> right till elem is defined or col === n
+// top --> down till elem is defined or row === n
+// right --> left till elem is defined or col === 0
+// down --> top  till elem is defined or row === 0
 
 function matrix (n, arr = [], direction = 1, row = 0, col = 0, count = 1) {
     if (count > n * n) {
